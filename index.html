@@ -13,7 +13,7 @@
 	<!-- 定义一个video标签 -->
 	<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
 	poster="poster.jpg" data-setup="{}">
-		<source src="index 1.m3u8" type="application/x-mpegURL">
+		<source src="/index 1.m3u8" type="application/x-mpegURL">
 		<!-- 定义备用的播放源 -->
 		<source src="http://example.com/example.mp4" type="video/mp4">
 		<!-- 提示用户安装Flash插件 -->
@@ -29,7 +29,7 @@
 			overrideNative: true // 启用HLS插件
 		});
 		player.src({
-			src: 'index 1.m3u8', // 指定M3U8文件URL
+			src: '/index 1.m3u8', // 指定M3U8文件URL
 			type: 'application/x-mpegURL' // 指定M3U8文件类型
 		});
 		player.play(); // 播放视频
