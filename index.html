@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,23 +14,23 @@
 	<!-- 定义一个video标签 -->
 	<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
 	poster="poster.jpg" data-setup="{}">
-		<source src="https://xy183x146x23x40xy.mcdn.bilivideo.cn:486/live-bvc/189392/live_67141_7013132_prohevc/index.m3u8?expires=1684072778&len=0&oi=1911896648&pt=web&qn=10000&trid=100704a40550f89740d2a2cd1bc81cee5e3d&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=cn-gotcha16&sign=62e85e486e0c40719e75003ca79f5b8f&sk=5bf07b9bbe6df2e0a6bc476fe3d9a642d4caf7efae2e198b21bcc415a9c6f5c2&flvsk=4207df3de646838b084f14f252be3aff3033194328f6029e3e02d13ef8059a83&p2p_type=1&sl=10&free_type=0&mid=441194719&sid=mcdn-ydzd-zjwz-ct-1002995&chash=1&sche=ban&bvchls=1&score=14&pp=rtmp&source=onetier&trace=90&site=fe3949028b136f3b8a3a9edcbda83572&order=1" type="application/x-mpegURL">
+		<source src="/index 1.m3u8" type="application/x-mpegURL">
 		<!-- 定义备用的播放源 -->
-		<source src="https://xy183x146x23x40xy.mcdn.bilivideo.cn:486/live-bvc/189392/live_67141_7013132_prohevc/index.m3u8?expires=1684072778&len=0&oi=1911896648&pt=web&qn=10000&trid=100704a40550f89740d2a2cd1bc81cee5e3d&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=cn-gotcha16&sign=62e85e486e0c40719e75003ca79f5b8f&sk=5bf07b9bbe6df2e0a6bc476fe3d9a642d4caf7efae2e198b21bcc415a9c6f5c2&flvsk=4207df3de646838b084f14f252be3aff3033194328f6029e3e02d13ef8059a83&p2p_type=1&sl=10&free_type=0&mid=441194719&sid=mcdn-ydzd-zjwz-ct-1002995&chash=1&sche=ban&bvchls=1&score=14&pp=rtmp&source=onetier&trace=90&site=fe3949028b136f3b8a3a9edcbda83572&order=1" type="video/mp4">
+		<source src="/videos/video.mp4" type="video/mp4">
 		<!-- 提示用户安装Flash插件 -->
 		<p class="vjs-no-js">
 			To view this video please enable JavaScript, and consider upgrading to a web browser that
 			<a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
 		</p>
 	</video>
-	<!-- 初始化video.js和HLS插件 -->
+	<!-- 初始化video.js实例和HLS插件 -->
 	<script>
 		var player = videojs('my-video'); // 创建video.js实例
 		player.hls({
 			overrideNative: true // 启用HLS插件
 		});
 		player.src({
-			src: 'https://xy183x146x23x40xy.mcdn.bilivideo.cn:486/live-bvc/189392/live_67141_7013132_prohevc/index.m3u8?expires=1684072778&len=0&oi=1911896648&pt=web&qn=10000&trid=100704a40550f89740d2a2cd1bc81cee5e3d&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=cn-gotcha16&sign=62e85e486e0c40719e75003ca79f5b8f&sk=5bf07b9bbe6df2e0a6bc476fe3d9a642d4caf7efae2e198b21bcc415a9c6f5c2&flvsk=4207df3de646838b084f14f252be3aff3033194328f6029e3e02d13ef8059a83&p2p_type=1&sl=10&free_type=0&mid=441194719&sid=mcdn-ydzd-zjwz-ct-1002995&chash=1&sche=ban&bvchls=1&score=14&pp=rtmp&source=onetier&trace=90&site=fe3949028b136f3b8a3a9edcbda83572&order=1', // 指定M3U8文件URL
+			src: '/index 1.m3u8', // 指定M3U8文件URL
 			type: 'application/x-mpegURL' // 指定M3U8文件类型
 		});
 		player.play(); // 播放视频
