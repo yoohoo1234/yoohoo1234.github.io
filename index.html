@@ -1,39 +1,48 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-	<title>播放M3U8文件</title>
-	<!-- 引入video.js CSS文件 -->
-	<link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
-	<!-- 引入video.js JavaScript文件 -->
-	<script src="https://unpkg.com/video.js/dist/video.js"></script>
-	<!-- 引入video.js-contrib-hls插件 -->
-	<script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M3U8在线播放器</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #000;
+    }
+
+    video {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
 </head>
 <body>
-	<!-- 定义一个video标签 -->
-	<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
-	poster="poster.jpg" data-setup="{}">
-		<source src="/index1.m3u8" type="application/x-mpegURL">
-		<!-- 定义备用的播放源 -->
-		<source src="/index1.m3u8" type="video/mp4">
-		<!-- 提示用户安装Flash插件 -->
-		<p class="vjs-no-js">
-			To view this video please enable JavaScript, and consider upgrading to a web browser that
-			<a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-		</p>
-	</video>
-	<!-- 初始化video.js实例和HLS插件 -->
-	<script>
-		var player = videojs('my-video'); // 创建video.js实例
-		player.hls({
-			overrideNative: true // 启用HLS插件
-		});
-		player.src({
-			src: '/index1.m3u8', // 指定M3U8文件URL
-			type: 'application/x-mpegURL' // 指定M3U8文件类型
-		});
-		player.play(); // 播放视频
-	</script>
+  <video id="video" controls></video>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script>
+    const video = document.getElementById('video');
+    const hlsUrl = '/index1.m3u8';
+
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(hlsUrl);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        video.play();
+      });
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = hlsUrl;
+      video.addEventListener('loadedmetadata', () => {
+        video.play();
+      });
+    } else {
+      alert('抱歉，您的浏览器不支持播放此视频。');
+    }
+  </script>
 </body>
 </html>
