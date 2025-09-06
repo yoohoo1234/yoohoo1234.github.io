@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客 - yoohoo1234</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>yoohoo1234</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">关于</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">项目</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">博客</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">联系</a>
+                </li>
+                <li class="nav-item">
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <!-- 英雄区域 -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">欢迎来到我的博客</h1>
+                <p class="hero-subtitle">分享技术、生活与思考</p>
+                <div class="hero-buttons">
+                    <a href="#blog" class="btn btn-primary">阅读文章</a>
+                    <a href="#about" class="btn btn-secondary">了解我</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于区域 -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">关于我</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>你好！我是一名热爱技术的开发者，专注于创建优雅而实用的解决方案。我喜欢探索新技术，分享知识，并与社区一起成长。</p>
+                        <div class="skills">
+                            <div class="skill-tag">Linux</div>
+                            <div class="skill-tag">Arch Linux</div>
+                            <div class="skill-tag">终端界面</div>
+                            <div class="skill-tag">Web开发</div>
+                            <div class="skill-tag">开源</div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>4+</h3>
+                            <p>活跃项目</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>代码提交</p>
+                        </div>
+                        <div class="stat">
+                            <h3>∞</h3>
+                            <p>学习热情</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目区域 -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">我的项目</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <h3>archlinux-file</h3>
+                        <p>Arch Linux 文件管理工具，提供高效的文件操作功能。</p>
+                        <a href="https://github.com/yoohoo1234/archlinux-file" class="project-link">
+                            查看项目 <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>arch-newbie</h3>
+                        <p>面向Arch Linux新手的指导项目，帮助初学者快速上手。</p>
+                        <a href="https://github.com/yoohoo1234/arch-newbie" class="project-link">
+                            查看项目 <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h3>rou_tui</h3>
+                        <p>现代化的终端用户界面，提供直观的交互体验。</p>
+                        <a href="https://github.com/yoohoo1234/rou_tui" class="project-link">
+                            查看项目 <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 博客区域 -->
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2 class="section-title">最新文章</h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="blog-placeholder">
+                                <i class="fab fa-linux"></i>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">2024-03-15</span>
+                                <span class="blog-category">技术</span>
+                            </div>
+                            <h3>Arch Linux 安装完全指南</h3>
+                            <p>详细介绍如何从零开始安装和配置 Arch Linux，包括分区、安装基本系统和桌面环境。</p>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="blog-placeholder">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">2024-03-10</span>
+                                <span class="blog-category">开发</span>
+                            </div>
+                            <h3>构建现代化TUI应用</h3>
+                            <p>探索如何使用现代工具和框架创建美观且功能强大的终端用户界面。</p>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="blog-placeholder">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">2024-03-05</span>
+                                <span class="blog-category">开源</span>
+                            </div>
+                            <h3>参与开源项目的心得</h3>
+                            <p>分享我在参与和维护开源项目过程中的经验和感悟，以及如何为社区做贡献。</p>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系区域 -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">联系我</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>欢迎与我交流技术话题，或者对我的项目提出建议！</p>
+                        <div class="contact-links">
+                            <a href="https://github.com/yoohoo1234" class="contact-link">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="mailto:contact@example.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                邮箱
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 yoohoo1234. 保留所有权利。</p>
+                <p>使用 ❤️ 和现代技术构建</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
