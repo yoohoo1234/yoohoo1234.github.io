@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YooHoo的博客</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>YooHoo</h1>
+                <span class="nav-subtitle">的个人博客</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">首页</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">关于</a></li>
+                <li class="nav-item"><a href="#blog" class="nav-link">博客</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">欢迎来到我的博客</h1>
+            <p class="hero-subtitle">分享生活，记录思考，探索世界</p>
+            <div class="hero-buttons">
+                <a href="#blog" class="btn btn-primary">阅读博客</a>
+                <a href="#about" class="btn btn-secondary">了解更多</a>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>你好！我是YooHoo，欢迎来到我的个人博客。</p>
+                    <p>在这里，我会分享我的生活感悟、技术心得、读书笔记以及对世界的思考。希望通过文字与你产生共鸣，一起成长，一起探索这个美好的世界。</p>
+                    <p>每一个平凡的日子都值得被记录，每一个想法都值得被分享。</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">博客文章</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">访客</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">分类</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">最新文章</h2>
+            <div class="blog-grid">
+                <article class="blog-card featured">
+                    <div class="blog-image">
+                        <div class="blog-category">生活感悟</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">今天是星期天</h3>
+                        <p class="blog-excerpt">阳光透过窗帘洒进房间，今天是一个美好的星期天。在这个安静的午后，我想和大家分享一些关于时间、生活和美好的思考...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">2024年3月10日</span>
+                            <span class="blog-read-time">5分钟阅读</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-category">技术分享</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">如何创建一个美观的博客网站</h3>
+                        <p class="blog-excerpt">在这篇文章中，我将分享如何从零开始创建一个现代化、响应式的博客网站，包括设计理念、技术选择和最佳实践...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">2024年3月8日</span>
+                            <span class="blog-read-time">8分钟阅读</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-category">读书笔记</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">《月亮与六便士》读后感</h3>
+                        <p class="blog-excerpt">毛姆的这部经典作品让我们思考理想与现实的关系。每个人心中都有月亮，但脚下却踩着六便士...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">2024年3月5日</span>
+                            <span class="blog-read-time">6分钟阅读</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-category">旅行日记</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">春日踏青记</h3>
+                        <p class="blog-excerpt">春天来了，万物复苏。上周末去郊外踏青，看到了久违的绿色，感受到了大自然的生机与活力...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">2024年3月3日</span>
+                            <span class="blog-read-time">4分钟阅读</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content">
+                <p class="contact-text">如果你想和我交流，欢迎通过以下方式联系我：</p>
+                <div class="contact-links">
+                    <a href="mailto:hello@yoohoo.com" class="contact-link">
+                        <span class="contact-icon">📧</span>
+                        <span>邮箱联系</span>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span class="contact-icon">💬</span>
+                        <span>微信交流</span>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span class="contact-icon">📱</span>
+                        <span>社交媒体</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 YooHoo的博客. 用❤️制作</p>
+                <p class="footer-subtitle">记录生活，分享美好</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
